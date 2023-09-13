@@ -51,27 +51,12 @@
     margin-top: 20px;
   }
 
-  /* flex mục tiêu nghề nghiệp */
-  /* .d-flex {
-    flex-direction: column;
-    gap: 20px !important;
-  } */
+  /* mục tiêu nghề nghiệp */
   .container-fluid h2 {
     font-size: 1rem;
   }
   .container-fluid p {
     font-size: 0.75rem;
-  }
-  /* Kinh Nghiệm làm việc  */
-  .exper-job--tittle2::before {
-    content: "";
-    background-color: #1971c2;
-    border-radius: 50%;
-    position: absolute;
-    top: 63.5%;
-    left: 0px;
-    width: 8px;
-    height: 8px;
   }
 
   /* certificate */
@@ -95,7 +80,7 @@
     width: 100%;
     position: absolute;
     left: 0%;
-    top: 36%;
+    top: 34.5%;
   }
   .cert3::before {
     content: "";
@@ -104,7 +89,7 @@
     width: 100%;
     position: absolute;
     left: 0;
-    top: 67%;
+    top: 66%;
   }
   /* Project */
   .pro-place {
@@ -130,6 +115,12 @@
     display: none;
   }
   /* Project charter page  */
+  .pro-char-1 {
+    border-right: none;
+  }
+  .pro-char-2 {
+    border-right: none;
+  }
   /* goals section  */
   .goal-icon {
     text-align: center;
@@ -138,12 +129,7 @@
   .scopes {
     border-bottom: 10px solid #1971c2;
   }
-  .pro-char-1 {
-    border-right: none;
-  }
-  .pro-char-2 {
-    border-right: none;
-  }
+
   /* Teams  */
   .teams {
     height: 550px;
@@ -161,5 +147,6 @@
   /* Time-line  */
   .tl-detail {
     padding-top: 10px;
+    padding-left: 0px !important;
   }
 }
