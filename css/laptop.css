@@ -130,12 +130,9 @@ a:visited {
 /* mục tiêu nghề nghiệp */
 .section-about {
   color: #868e96;
-}
-.section-about .raw {
-  width: 100%;
-  color: #868e96;
+  margin-bottom: 30px;
   line-height: 1.75;
-  margin: 0px;
+  margin: 0px 0px 30px;
 }
 
 .personal-info {
@@ -157,6 +154,7 @@ a:visited {
 /* tạo ccs trong section job info */
 #job_info {
   color: #868e96;
+  margin-bottom: 30px;
 }
 .info-icon {
   height: 36px;
@@ -206,27 +204,16 @@ a:visited {
 .exper-job--tittle {
   list-style: none;
 }
-.exper-content {
+.list-title {
   position: relative;
 }
-.exper-job--tittle1::before {
+.list-title::before {
   content: "";
   background-color: #1971c2;
   border-radius: 50%;
   position: absolute;
-  top: 1.5%;
-  left: 0px;
-  width: 8px;
-  height: 8px;
-}
-
-.exper-job--tittle2::before {
-  content: "";
-  background-color: #1971c2;
-  border-radius: 50%;
-  position: absolute;
-  top: 67%;
-  left: 0px;
+  top: 6px;
+  left: -30px;
   width: 8px;
   height: 8px;
 }
@@ -258,29 +245,7 @@ a:visited {
   list-style: none;
 }
 .edu-content {
-  position: relative;
   padding-left: 16px;
-}
-.edu-job--tittle1::before {
-  content: "";
-  background-color: #1971c2;
-  border-radius: 50%;
-  position: absolute;
-  top: 2%;
-  left: 0px;
-  width: 8px;
-  height: 8px;
-}
-
-.edu-job--tittle2::before {
-  content: "";
-  background-color: #1971c2;
-  border-radius: 50%;
-  position: absolute;
-  top: 56.5%;
-  left: 0px;
-  width: 8px;
-  height: 8px;
 }
 /* section quá trình học tập end*/
 
@@ -305,30 +270,9 @@ a:visited {
   list-style: none;
 }
 .act-content {
-  position: relative;
   padding-left: 16px;
 }
-.act-job--tittle1::before {
-  content: "";
-  background-color: #1971c2;
-  border-radius: 50%;
-  position: absolute;
-  top: 3%;
-  left: 0px;
-  width: 8px;
-  height: 8px;
-}
 
-.act-job--tittle2::before {
-  content: "";
-  background-color: #1971c2;
-  border-radius: 50%;
-  position: absolute;
-  top: 59%;
-  left: 0px;
-  width: 8px;
-  height: 8px;
-}
 /* section Activities end*/
 
 /* section Interest start*/
@@ -345,13 +289,13 @@ a:visited {
   border: 1px solid #1971c2;
   border-radius: 50%;
 }
-.int-list {
+/* .int-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
   padding-top: 20px;
-}
+} */
 
 /* section Interest end*/
 
@@ -424,8 +368,10 @@ a:visited {
 /* section ngôn ngữ end  */
 
 /* section chứng chỉ giải thưởng start */
+
+/* CSS Grid cho section chứng chỉ giải thưởng */
 .cer-title {
-  padding-left: 135px;
+  width: 83% !important;
 }
 .cert img {
   height: 125px;
@@ -433,12 +379,11 @@ a:visited {
   margin-left: 20px;
 }
 
-/* CSS Grid cho section chứng chỉ giải thưởng */
 .cer-bg {
   background-color: hsla(210, 17%, 95%, 0.5);
 }
 #certificate {
-  width: 85%;
+  /* width: 100%; */
   position: relative;
   color: #868e96;
 }
@@ -496,6 +441,9 @@ a:visited {
   width: 80%;
   color: #868e96;
 }
+.project-title {
+  width: 85% !important;
+}
 .pro-border {
   height: 700px;
   border: 1px solid #d0d0d0;
@@ -538,13 +486,14 @@ a:visited {
 
 /* Project Charter */
 /* button */
+
 .btn-back {
   border-radius: 100px !important;
 }
 .pro-char {
   color: #868e96;
   background-color: #f0f8ff;
-  border: 20px solid #1971c2;
+  border: 20px solid #0000ff;
   border-collapse: collapse;
 }
 .pro-char-title {
@@ -552,36 +501,49 @@ a:visited {
   border-bottom: 1px solid #868e96;
 }
 .pro-char-1 {
-  border-right: 10px solid #1971c2;
+  border-right: 10px solid #0000ff;
   border-collapse: collapse;
 }
 .pro-char-2 {
-  border-right: 10px solid #1971c2;
+  border-right: 10px solid #0000ff;
 }
 
 /* Goals */
 .goals {
-  border-bottom: 10px solid #1971c2;
+  border-bottom: 10px solid #0000ff;
 }
 .goals-content {
   height: 400px;
 }
+.goals-detail {
+  border-bottom: 1px solid hwb(210 53% 41% / 0.13);
+}
 /* Teams */
 .teams {
-  border-bottom: 10px solid #1971c2;
+  border-bottom: 10px solid #0000ff;
 }
 .teams-content {
   height: 400px;
 }
 /* timeline */
 .icon-timeline {
-  width: 30px !important;
-  height: 30px !important;
+  /* display: flex; */
+  width: 45px !important;
+  height: 55px !important;
   border-radius: 50%;
-  border: 1px solid gray;
-  text-align: center;
+  border: 2px solid gray;
+  /* text-align: center; */
+  /* justify-content: center;
+  align-items: center; */
+
   color: #fff;
   background-color: #9e88ff;
+}
+.icon-timeline h5 {
+  margin-bottom: 0px !important;
+}
+.time-number {
+  margin-bottom: 0px !important;
 }
 .tl-detail {
   border-bottom: 1px dotted #66d9e8;
