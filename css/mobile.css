@@ -115,6 +115,12 @@
   .pro-content {
     row-gap: 16px;
   }
+  .pro-detail-title {
+    flex: 25% !important;
+  }
+  .pro-detail-content {
+    flex: 75% !important;
+  }
   /* footer  */
   .footer-icon {
     transform: scale(1.5);
