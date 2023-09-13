@@ -68,33 +68,12 @@
     background-color: #1971c2;
     border-radius: 50%;
     position: absolute;
-    top: 250px;
+    top: 63.5%;
     left: 0px;
     width: 8px;
     height: 8px;
   }
-  /* học vấn */
-  .edu-job--tittle2::before {
-    content: "";
-    background-color: #1971c2;
-    border-radius: 50%;
-    position: absolute;
-    top: 137px;
-    left: 0px;
-    width: 8px;
-    height: 8px;
-  }
-  /* hoạt động */
-  .act-job--tittle2::before {
-    content: "";
-    background-color: #1971c2;
-    border-radius: 50%;
-    position: absolute;
-    top: 120px;
-    left: 0px;
-    width: 8px;
-    height: 8px;
-  }
+
   /* certificate */
 
   .cer-title {
