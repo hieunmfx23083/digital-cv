@@ -53,21 +53,19 @@
     top: 53%;
   }
   /* Project */
-  /* .pro-content {
-    flex-wrap: nowrap !important;
-  } */
+
   .pro-place {
     flex-wrap: wrap;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
   .pro-detail {
     font-size: 0.6rem;
   }
   .pro-name {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .pro-year {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .pro-detail-title {
     font-size: 0.55rem;
