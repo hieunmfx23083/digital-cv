@@ -6,16 +6,18 @@
   .section-about {
     width: 100%;
   }
-  .edu-job--tittle2::before {
+  /* Experience */
+  .exper-job--tittle2::before {
     content: "";
     background-color: #1971c2;
     border-radius: 50%;
     position: absolute;
-    top: 159px;
+    top: 63.5%;
     left: 0px;
     width: 8px;
     height: 8px;
   }
+
   /* certificate */
   .cer-title {
     padding-left: 85px;
