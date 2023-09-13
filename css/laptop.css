@@ -214,7 +214,7 @@ a:visited {
   background-color: #1971c2;
   border-radius: 50%;
   position: absolute;
-  top: 06px;
+  top: 1.5%;
   left: 0px;
   width: 8px;
   height: 8px;
@@ -225,7 +225,7 @@ a:visited {
   background-color: #1971c2;
   border-radius: 50%;
   position: absolute;
-  top: 250px;
+  top: 67%;
   left: 0px;
   width: 8px;
   height: 8px;
@@ -266,7 +266,7 @@ a:visited {
   background-color: #1971c2;
   border-radius: 50%;
   position: absolute;
-  top: 6px;
+  top: 2%;
   left: 0px;
   width: 8px;
   height: 8px;
@@ -277,7 +277,7 @@ a:visited {
   background-color: #1971c2;
   border-radius: 50%;
   position: absolute;
-  top: 135px;
+  top: 56.5%;
   left: 0px;
   width: 8px;
   height: 8px;
@@ -313,7 +313,7 @@ a:visited {
   background-color: #1971c2;
   border-radius: 50%;
   position: absolute;
-  top: 6px;
+  top: 3%;
   left: 0px;
   width: 8px;
   height: 8px;
@@ -324,7 +324,7 @@ a:visited {
   background-color: #1971c2;
   border-radius: 50%;
   position: absolute;
-  top: 120px;
+  top: 59%;
   left: 0px;
   width: 8px;
   height: 8px;
@@ -469,11 +469,11 @@ a:visited {
 .cert1::before {
   content: "";
   background-color: #d6c08d;
-  height: 140px;
+  height: 35%;
   width: 1px;
   position: absolute;
   left: 50%;
-  top: 80px;
+  top: 20%;
 }
 
 .cert3::before {
@@ -483,7 +483,7 @@ a:visited {
   width: 81%;
   position: absolute;
   left: 10%;
-  top: 225px;
+  top: 57%;
 }
 
 /* CSS cho chứng chỉ lập trình web  */
@@ -580,7 +580,7 @@ a:visited {
   border-radius: 50%;
   border: 1px solid gray;
   text-align: center;
-color: #fff;
+
   background-color: #9e88ff;
 }
 .tl-detail {
