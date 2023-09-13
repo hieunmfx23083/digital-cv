@@ -1,0 +1,589 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+/* MAIN COLOR : #1971c2
+      GREY COLOR #868e96 */
+
+/* General setup */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: "opensan", sans-serif;
+  color: #868e96;
+  line-height: 1;
+  /* width: 1200px; */
+  display: block;
+  margin: 0 auto;
+}
+
+/* CSS for link */
+a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #868e96 !important;
+  text-decoration: none !important;
+}
+a:hover,
+a:active,
+a:visited {
+  color: #868e96;
+}
+.nav-item a {
+  color: #868e96;
+}
+
+/* CSS Banner start*/
+/* Building image for banner */
+.banner {
+  height: 50vh;
+  position: relative;
+  color: #fff;
+  padding: 32px;
+  /* background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("../images/banner.jpg");
+  background-size: cover; */
+}
+.bg-img {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("../images/banner.jpg");
+  background-size: cover;
+}
+
+/* Justify text for Banner using Position */
+.banner h1 {
+  font-size: 2rem;
+  position: absolute;
+  /* IN relation to parent size */
+  left: 50%;
+  top: 35%;
+  /* IN relation to element size */
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.banner span {
+  font-size: 1.1rem;
+  position: absolute;
+  /* IN relation to parent size */
+  left: 50%;
+  top: 45%;
+  /* IN relation to element size */
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.5);
+}
+/* CSS Banner end*/
+
+/* Building the Nav-bar start */
+
+/* CSS for Icon */
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #1971c2;
+}
+
+/* tạo avatar bo tròn trên thanh Nav-bar  */
+.avatar {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar img {
+  height: 24px;
+  width: 24px;
+  transform: scale(6);
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.nav-item {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+
+  border: 1px solid hsla(210, 10%, 23%, 0.1);
+  border-collapse: collapse;
+}
+.nav-link {
+  padding-left: 8px !important;
+  padding-right: 0 !important;
+}
+
+/* mục tiêu nghề nghiệp */
+.section-about {
+  color: #868e96;
+}
+.section-about .raw {
+  width: 100%;
+  color: #868e96;
+  line-height: 1.75;
+  margin: 0px;
+}
+
+.personal-info {
+  background-color: #e9ecef;
+}
+.personal-info li {
+  list-style-type: none;
+}
+.personal-info ul {
+  padding-left: 0;
+}
+.personal-info span {
+  font-weight: 500;
+}
+.logo {
+  display: flex;
+  gap: 15px;
+}
+/* tạo ccs trong section job info */
+#job_info {
+  color: #868e96;
+}
+.info-icon {
+  height: 36px;
+  width: 36px;
+  color: #868e96;
+}
+
+/* tạo chữ in nghiêng cho ngày tháng */
+.working-time {
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+/* tạo backgound cho chữ hiện tại có màu xanh */
+.current {
+  background-color: #1971c2;
+  color: #fff;
+  padding: 0px 7px;
+  border-radius: 5px;
+}
+/* section kinh nghiệm làm việc start*/
+.list--detail {
+  padding-left: 0px;
+  font-size: 13px;
+  line-height: 1.75;
+}
+.experience .info-icon {
+  align-self: center;
+}
+
+/* tạo khoản trống cho 2 giai đoạn làm việc */
+.epxer-content--list {
+  padding-bottom: 16px;
+}
+
+/* xóa tyle của List và thêm dấu "-" vào dầu danh sách */
+.epxer-content--list li {
+  list-style: none;
+}
+.epxer-content--list li::before {
+  content: " - ";
+  width: 3px;
+}
+
+/* tạo chấm tròn màu xanh cho Job Tittle  */
+.exper-job--tittle {
+  list-style: none;
+}
+.exper-content {
+  position: relative;
+}
+.exper-job--tittle1::before {
+  content: "";
+  background-color: #1971c2;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.5%;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+}
+
+.exper-job--tittle2::before {
+  content: "";
+  background-color: #1971c2;
+  border-radius: 50%;
+  position: absolute;
+  top: 67%;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+}
+
+/* section kinh nghiệm làm việc end*/
+
+/* section quá trình học tập start*/
+
+.edu-content--ul {
+  padding-left: 16px;
+}
+
+/* tạo khoản trống cho 2 giai đoạn học tập */
+.edu-content--list {
+  padding-bottom: 16px;
+}
+
+/* xóa tyle của List và thêm dấu "-" vào dầu danh sách */
+.edu-content--list li {
+  list-style: none;
+}
+.edu-content--list li::before {
+  content: " - ";
+  width: 3px;
+}
+
+/* tạo chấm tròn màu xanh cho giai đoạn học tập  */
+.edu-job--tittle {
+  list-style: none;
+}
+.edu-content {
+  position: relative;
+  padding-left: 16px;
+}
+.edu-job--tittle1::before {
+  content: "";
+  background-color: #1971c2;
+  border-radius: 50%;
+  position: absolute;
+  top: 2%;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+}
+
+.edu-job--tittle2::before {
+  content: "";
+  background-color: #1971c2;
+  border-radius: 50%;
+  position: absolute;
+  top: 56.5%;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+}
+/* section quá trình học tập end*/
+
+/* section Activities start*/
+
+/* tạo grid cho section  */
+
+/* xóa tyle của List và thêm dấu "-" vào dầu danh sách */
+.act-content--ul {
+  padding-left: 16px;
+}
+.act-content--list li {
+  list-style: none;
+}
+.act-content--list li::before {
+  content: " - ";
+  width: 3px;
+}
+
+/* tạo chấm tròn màu xanh cho giai đoạn hoạt động  */
+.act-job--tittle {
+  list-style: none;
+}
+.act-content {
+  position: relative;
+  padding-left: 16px;
+}
+.act-job--tittle1::before {
+  content: "";
+  background-color: #1971c2;
+  border-radius: 50%;
+  position: absolute;
+  top: 3%;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+}
+
+.act-job--tittle2::before {
+  content: "";
+  background-color: #1971c2;
+  border-radius: 50%;
+  position: absolute;
+  top: 59%;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+}
+/* section Activities end*/
+
+/* section Interest start*/
+
+.int-list p {
+  font-size: 13px;
+}
+/* CSS for Icon sở thích */
+.int-icon {
+  height: 36px;
+  width: 36px;
+  color: #1971c2;
+  padding: 7px;
+  border: 1px solid #1971c2;
+  border-radius: 50%;
+}
+.int-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 20px;
+}
+
+/* section Interest end*/
+
+/* section ngôn ngữ start  */
+
+/* CSS tạo đường kẻ thang điểm */
+.lang--lvl {
+  display: inline-block;
+  height: 3px;
+  width: 60px;
+  background-color: #ced4da;
+  margin-right: 10px;
+}
+/* CSS điểm cho từng ngôn ngữ */
+.lang-lvl--eng span:first-child {
+  background-color: #1971c2;
+}
+.lang-lvl--eng span:nth-child(2) {
+  background-color: #1971c2;
+}
+.lang-lvl--spa span:first-child {
+  background-color: #1971c2;
+}
+.lang-lvl--kro span:first-child {
+  background-color: #1971c2;
+}
+
+/* section ngôn ngữ end  */
+
+/* section Kỹ năng start  */
+
+.skill--lvl {
+  display: inline-block;
+  height: 3px;
+  width: 45px;
+  background-color: #ced4da;
+  margin-right: 10px;
+}
+/* CSS điểm cho từng kỹ năng */
+
+/* HTML CSS */
+.skill-lvl--1 span:first-child {
+  background-color: #1971c2;
+}
+.skill-lvl--1 span:nth-child(2) {
+  background-color: #1971c2;
+}
+.skill-lvl--1 span:nth-child(3) {
+  background-color: #1971c2;
+}
+/* Javascipt */
+.skill-lvl--2 span:first-child {
+  background-color: #1971c2;
+}
+.skill-lvl--2 span:nth-child(2) {
+  background-color: #1971c2;
+}
+/* NodeJS */
+.skill-lvl--3 span:first-child {
+  background-color: #1971c2;
+}
+.skill-lvl--3 span:nth-child(2) {
+  background-color: #1971c2;
+}
+/* Bootstrap5 */
+.skill-lvl--4 span:first-child {
+  background-color: #1971c2;
+}
+
+/* section ngôn ngữ end  */
+
+/* section chứng chỉ giải thưởng start */
+.cer-title {
+  padding-left: 135px;
+}
+.cert img {
+  height: 125px;
+  width: 200px;
+  margin-left: 20px;
+}
+
+/* CSS Grid cho section chứng chỉ giải thưởng */
+.cer-bg {
+  background-color: hsla(210, 17%, 95%, 0.5);
+}
+#certificate {
+  width: 85%;
+  position: relative;
+  color: #868e96;
+}
+
+/* canh chỉnh văn bản */
+.cert h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.cert li {
+  font-size: 12px;
+  list-style: none;
+}
+.cert-text {
+  margin-left: 20px;
+  line-height: 2;
+}
+.cert-text ul {
+  padding-left: 0px;
+}
+/* tạo dấu - trước cái li  */
+.cert li::before {
+  content: " - ";
+  width: 3px;
+}
+
+/* tạo border màu #d6c08d phân biệt giữa các chứng chỉ */
+.cert1::before {
+  content: "";
+  background-color: #d6c08d;
+  height: 35%;
+  width: 1px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+.cert3::before {
+  content: "";
+  background-color: #d6c08d;
+  height: 1px;
+  width: 81%;
+  position: absolute;
+  left: 10%;
+  top: 57%;
+}
+
+/* CSS cho chứng chỉ lập trình web  */
+
+/* section chứng chỉ giải thưởng End */
+
+/* Section dự án start  */
+
+#project {
+  width: 80%;
+  color: #868e96;
+}
+.pro-border {
+  height: 700px;
+  border: 1px solid #d0d0d0;
+  box-shadow: 1px 1px 5px #d0d0d0;
+}
+
+/* chỉnh khối năm làm dự án, cty và chức vụ start*/
+
+.pro-year {
+  background-color: #1971c2;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.pro-detail {
+  font-size: 0.85rem;
+}
+
+/* Section dự án End  */
+
+/* CSS cho Footer  */
+
+.bg-footer {
+  background-color: rgba(206, 212, 218, 0.4);
+}
+.footer ul {
+  font-size: 0.5rem;
+}
+.footer-icon {
+  color: #1971c2;
+}
+#footer li {
+  list-style: none;
+}
+#footer a {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+/* Project Charter */
+/* button */
+.btn-back {
+  border-radius: 100px !important;
+}
+.pro-char {
+  color: #868e96;
+  background-color: #f0f8ff;
+  border: 20px solid #1971c2;
+  border-collapse: collapse;
+}
+.pro-char-title {
+  color: #1971c2;
+  border-bottom: 1px solid #868e96;
+}
+.pro-char-1 {
+  border-right: 10px solid #1971c2;
+  border-collapse: collapse;
+}
+.pro-char-2 {
+  border-right: 10px solid #1971c2;
+}
+
+/* Goals */
+.goals {
+  border-bottom: 10px solid #1971c2;
+}
+.goals-content {
+  height: 400px;
+}
+/* Teams */
+.teams {
+  border-bottom: 10px solid #1971c2;
+}
+.teams-content {
+  height: 400px;
+}
+/* timeline */
+.icon-timeline {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+  border: 1px solid gray;
+  text-align: center;
+
+  background-color: #9e88ff;
+}
+.tl-detail {
+  border-bottom: 1px dotted #66d9e8;
+  /* margin-bottom: 10px; */
+}

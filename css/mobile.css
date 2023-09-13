@@ -1,0 +1,159 @@
+@media only screen and (max-width: 576px) {
+  /* header */
+  .banner h1 {
+    font-size: 18px;
+    position: absolute;
+    /* IN relation to parent size */
+    left: 50%;
+    top: 27%;
+  }
+  .banner span {
+    font-size: 9px;
+    position: absolute;
+    /* IN relation to parent size */
+    left: 50%;
+    top: 32%;
+  }
+  .banner {
+    height: 50vh;
+    position: relative;
+    color: #fff;
+    padding: 32px;
+  }
+  .bg-img {
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.6),
+        rgba(34, 34, 34, 0.6)
+      ),
+      url("../images/banner-mobile.jpg");
+    background-size: cover;
+  }
+  /* nav-bar */
+  .avatar {
+    display: none;
+  }
+
+  .nav-item {
+    justify-content: start !important;
+    margin-left: 70px;
+    border: none;
+  }
+  .nav-link {
+    padding-left: 8px !important;
+    padding-right: 0 !important;
+    font-size: 0.75rem;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    margin-top: 20px;
+  }
+
+  /* flex mục tiêu nghề nghiệp */
+  /* .d-flex {
+    flex-direction: column;
+    gap: 20px !important;
+  } */
+  .container-fluid h2 {
+    font-size: 1rem;
+  }
+  .container-fluid p {
+    font-size: 0.75rem;
+  }
+  /* Kinh Nghiệm làm việc  */
+  .exper-job--tittle2::before {
+    content: "";
+    background-color: #1971c2;
+    border-radius: 50%;
+    position: absolute;
+    top: 63.5%;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+  }
+
+  /* certificate */
+
+  .cer-title {
+    padding-left: 35px;
+  }
+  .cert img {
+    height: 85%;
+    width: 90%;
+    margin: auto;
+  }
+  .cert .d-flex {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .cert1::before {
+    content: "";
+    background-color: #d6c08d;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 36%;
+  }
+  .cert3::before {
+    content: "";
+    background-color: #d6c08d;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 67%;
+  }
+  /* Project */
+  .pro-place {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .pro-content {
+    row-gap: 16px;
+  }
+  /* footer  */
+  .footer-icon {
+    transform: scale(1.5);
+    padding: 0 10px;
+  }
+  .footer p {
+    display: none;
+  }
+  /* Project charter page  */
+  /* goals section  */
+  .goal-icon {
+    text-align: center;
+  }
+  /* scopes section  */
+  .scopes {
+    border-bottom: 10px solid #1971c2;
+  }
+  .pro-char-1 {
+    border-right: none;
+  }
+  .pro-char-2 {
+    border-right: none;
+  }
+  /* Teams  */
+  .teams {
+    height: 550px;
+  }
+  .team-icon {
+    text-align: center;
+  }
+  /* Primary  */
+  .primary-icon {
+    text-align: center;
+  }
+  .primary {
+    border-bottom: 10px solid #1971c2;
+  }
+  /* Time-line  */
+  .tl-detail {
+    padding-top: 10px;
+  }
+}
