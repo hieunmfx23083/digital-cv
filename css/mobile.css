@@ -1,4 +1,4 @@
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
   /* header */
   .banner h1 {
     font-size: 18px;
@@ -92,11 +92,15 @@
     top: 66%;
   }
   /* Project */
+  .pro-time {
+    padding-bottom: 5px;
+  }
   .pro-place {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
+
   .pro-content {
     row-gap: 16px;
   }
