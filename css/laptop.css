@@ -441,17 +441,23 @@ a:visited {
   width: 80%;
   color: #868e96;
 }
+.pro-image {
+  height: 285px;
+}
 .project-title {
   width: 85% !important;
 }
 .pro-border {
-  height: 700px;
   border: 1px solid #d0d0d0;
   box-shadow: 1px 1px 5px #d0d0d0;
 }
-
+.pro-name a {
+  font-size: 1rem;
+}
 /* chỉnh khối năm làm dự án, cty và chức vụ start*/
-
+.pro-time-detail {
+  padding: 8px 0px;
+}
 .pro-year {
   background-color: #1971c2;
   color: #fff;
